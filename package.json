@@ -1,0 +1,25 @@
+{
+    "name": "nianiolangcode",
+    "displayName": "NianioLangCode",
+    "description": "Basic support for NianioLang",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.30.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "nianiolang",
+            "aliases": ["NianioLang", "nianiolang"],
+            "extensions": [".nl"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "nianiolang",
+            "scopeName": "source.nianio",
+            "path": "./syntaxes/nianiolang.tmLanguage.json"
+        }]
+    }
+}
