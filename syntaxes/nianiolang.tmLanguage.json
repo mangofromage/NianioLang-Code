@@ -7,23 +7,75 @@
 		},
 		{
 			"include": "#strings"
+		},
+		{
+			"include": "#variants"
+		},
+		{
+			"include": "#comments"
+		},
+		{
+			"include": "#modules"
+		},
+		{
+			"include": "#functions"
+		},
+		{
+			"include": "#vars"
 		}
 	],
 	"repository": {
 		"keywords": {
-			"patterns": [{
-				"name": "keyword.control.nianiolang",
-				"match": "\\b(if|while|for|return)\\b"
-			}]
+			"patterns": [
+				{
+					"name": "keyword.control.nianiolang",
+					"match": "\\b(else|elsif|use|fora|forh|def|match|case|try|if|while|for|return)\\b"
+				}
+			]
 		},
 		"strings": {
 			"name": "string.quoted.double.nianiolang",
-			"begin": "\"",
-			"end": "\"",
+			"begin": "'",
+			"end": "'",
+			"patterns": []
+		},
+		"variants": {
 			"patterns": [
 				{
-					"name": "constant.character.escape.nianiolang",
-					"match": "\\\\."
+					"match": "(:[a-zA-Z_][a-zA-Z_]*)",
+					"name": "constant.language"
+				}
+			]
+		},
+		"comments": {
+			"patterns": [
+				{
+					"match": "(#.*)",
+					"name": "comment"
+				}
+			]
+		},
+		"vars": {
+			"patterns": [
+				{
+					"match": "\\b(var)\\b",
+					"name": "variable.name"
+				}
+			]
+		},
+		"modules": {
+			"patterns": [
+				{
+					"match": "\\b([a-z_]*::)\\b",
+					"name": "entity.name.class"
+				}
+			]
+		},
+		"functions": {
+			"patterns": [
+				{
+					"match": "([a-z_]*\\()",
+					"name": "entity.name.function"
 				}
 			]
 		}

@@ -3,6 +3,7 @@
     "displayName": "NianioLangCode",
     "description": "Basic support for NianioLang",
     "version": "0.0.1",
+    "publisher": "Jan Grzybek",
     "engines": {
         "vscode": "^1.30.0"
     },
