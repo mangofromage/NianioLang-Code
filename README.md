@@ -1,6 +1,6 @@
 # nianiolangcode README
 
-Basic code highlithing for NianioLand
+Basic code highlithing for NianioLang
 
 ## Features
 
