@@ -2,8 +2,8 @@
     "name": "nianiolangcode",
     "displayName": "NianioLangCode",
     "description": "Basic support for NianioLang",
-    "version": "0.0.1",
-    "publisher": "Jan Grzybek",
+    "version": "0.0.2",
+    "publisher": "JanGrzybek",
     "engines": {
         "vscode": "^1.30.0"
     },
