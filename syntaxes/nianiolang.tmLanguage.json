@@ -68,9 +68,12 @@
 		},
 		"strings": {
 			"name": "string.quoted.double.nianiolang",
-			"begin": "'",
-			"end": "'",
-			"patterns": []
+			"patterns": [
+				{
+					"match": "'(.*?)('|\n)",
+					"name": "string.quoted.double.nianiolang"
+				}
+			]
 		},
 		"variants": {
 			"patterns": [
