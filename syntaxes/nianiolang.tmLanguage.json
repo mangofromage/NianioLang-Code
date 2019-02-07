@@ -78,7 +78,7 @@
 		"variants": {
 			"patterns": [
 				{
-					"match": "(:[a-zA-Z0-9_]+)",
+					"match": "( :[a-zA-Z0-9_]+)",
 					"name": "storage.type"
 				}
 			]
@@ -102,7 +102,7 @@
 		"modules": {
 			"patterns": [
 				{
-					"match": "\\b([a-z_]*::)\\b",
+					"match": "\\b([a-z_0-9]+(?=:))\\b",
 					"name": "entity.name.class"
 				}
 			]
