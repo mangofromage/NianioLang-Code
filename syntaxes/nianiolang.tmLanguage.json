@@ -38,7 +38,7 @@
 			"patterns": [
 				{
 					"name": "keyword.control.nianiolang",
-					"match": "\\b(uless|ref|as|is|eq|die|ensure|ne|else|elsif|use|fora|forh|def|match|case|try|if|while|for|return)\\b"
+					"match": "\\b(?<!:)(unless|ref|as|is|eq|die|ensure|ne|else|elsif|use|fora|forh|def|match|case|try|if|while|for|return)\\b"
 				}
 			]
 		},
@@ -78,7 +78,7 @@
 		"variants": {
 			"patterns": [
 				{
-					"match": "( :[a-zA-Z0-9_]+)",
+					"match": "((?<!:):[a-zA-Z0-9_]+)",
 					"name": "storage.type"
 				}
 			]
@@ -102,7 +102,7 @@
 		"modules": {
 			"patterns": [
 				{
-					"match": "\\b([a-z_0-9]+(?=:))\\b",
+					"match": "\\b([a-z_0-9]+(?=::))\\b",
 					"name": "entity.name.class"
 				}
 			]
