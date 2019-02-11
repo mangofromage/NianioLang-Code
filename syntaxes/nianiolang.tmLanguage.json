@@ -45,7 +45,7 @@
 		"references": {
 			"patterns": [
 				{
-					"match": "(@[a-z:()_]+)",
+					"match": "(@[a-zA-Z:()_]+)",
 					"name": "variable.name"
 				}
 			]
@@ -61,7 +61,7 @@
 		"constants": {
 			"patterns": [
 				{
-					"match": "([0-9]+)",
+					"match": "((?<![a-zA-Z_])[0-9]+)",
 					"name": "constant.numeric"
 				}
 			]
@@ -102,7 +102,7 @@
 		"modules": {
 			"patterns": [
 				{
-					"match": "\\b([a-z_0-9]+(?=::))\\b",
+					"match": "\\b([a-zA-Z0-9_]+(?=:))\\b",
 					"name": "entity.name.class"
 				}
 			]
@@ -110,7 +110,7 @@
 		"functions": {
 			"patterns": [
 				{
-					"match": "([a-z_]*\\()",
+					"match": "([a-zA-Z0-9_]*\\()",
 					"name": "entity.name.function"
 				}
 			]
