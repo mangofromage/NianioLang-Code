@@ -2,10 +2,14 @@
     "name": "nianiolangcode",
     "displayName": "NianioLangCode",
     "description": "Basic support for NianioLang",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "publisher": "JanGrzybek",
     "engines": {
         "vscode": "^1.30.0"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/kolkil/nianiolang-code"
     },
     "categories": [
         "Programming Languages"
