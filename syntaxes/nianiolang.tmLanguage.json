@@ -63,6 +63,10 @@
 				{
 					"match": "((?<![a-zA-Z_])[0-9]+)",
 					"name": "constant.numeric"
+				},
+				{
+					"match": "\\b(true|false)\\b",
+					"name": "constant.language"
 				}
 			]
 		},
