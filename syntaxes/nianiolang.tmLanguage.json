@@ -38,7 +38,7 @@
 			"patterns": [
 				{
 					"name": "keyword.control.nianiolang",
-					"match": "\\b(?<!:)(unless|ref|as|is|eq|die|ensure|ne|else|elsif|use|fora|forh|def|match|case|try|if|while|for|return)\\b"
+					"match": "\\b(?<!:)(unless|ref|as|is|eq|die|ensure|ne|else|elsif|use|fora|forh|def|match|case|try|if|while|for|return|break|continue)\\b"
 				}
 			]
 		},
